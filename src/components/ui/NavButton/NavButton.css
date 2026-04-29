@@ -7,7 +7,19 @@
   color: rgb(0, 0, 0, 0.6);
   padding: 4px;
   font-weight: 600;
-  font-size: large;
+  font-size: medium;
+  padding: 8px;
+}
+
+.nav-btn.nav-btn-primary {
+  background-color: #96000a;
+  color: white;
+  border-radius: 6px;
+}
+
+.nav-btn.nav-btn-primary:hover {
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
 }
 
 .nav-btn:hover {

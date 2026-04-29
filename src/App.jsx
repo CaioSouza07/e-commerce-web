@@ -2,11 +2,13 @@ import { Search } from "lucide-react";
 import "./App.css";
 import Input from "./components/ui/Input/Input";
 import ProductCard from "./components/ui/ProductCard/ProductCard";
+import Header from "./components/layout/Header/Header";
 
 function App() {
   return (
     <>
-      <div className="container">
+      <Header />
+      {/* <div className="container">
         <ProductCard
           title={"Tênis Nike - Corrida"}
           image={
@@ -31,7 +33,7 @@ function App() {
       </div>
       <Input placeholder={"Busque por um produto..."}>
         <Search className="input-icon" size={20} />
-      </Input>
+      </Input> */}
     </>
   );
 }
