@@ -1,0 +1,42 @@
+.container-checkbox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.check-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.check-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.check-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #555;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.container-checkbox .check-input:checked + .check-label::before {
+  background-color: black;
+  border-color: black;
+}
+
+.container-checkbox .check-input:checked + .check-label::after {
+  content: "✔";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  color: white;
+  font-size: 16px;
+}

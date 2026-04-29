@@ -3,11 +3,13 @@ import "./App.css";
 import Input from "./components/ui/Input/Input";
 import ProductCard from "./components/ui/ProductCard/ProductCard";
 import Header from "./components/layout/Header/Header";
+import Checkbox from "./components/ui/Checkbox/Checkbox";
 
 function App() {
   return (
     <>
       <Header />
+      <Checkbox id={"teste"}>Opcao </Checkbox>
       {/* <div className="container">
         <ProductCard
           title={"Tênis Nike - Corrida"}
