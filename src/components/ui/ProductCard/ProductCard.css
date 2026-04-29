@@ -1,0 +1,55 @@
+.container-img {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 7;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.container-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.container-infos {
+  flex: 3;
+  min-height: 0;
+  padding: 12px;
+  font-size: small;
+  /* background-color: red; */
+}
+
+.info-category {
+  font-weight: 600;
+  color: rgb(0, 0, 0, 0.4);
+  margin: 0;
+}
+
+.info-title {
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.info-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-weight: 800;
+  color: #96000a;
+  align-items: end;
+}
+
+.info-price p {
+  font-weight: 500;
+  color: rgb(0, 0, 0, 0.4);
+  text-decoration: line-through;
+  font-size: smaller;
+  margin: 0;
+}
