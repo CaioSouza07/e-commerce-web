@@ -1,6 +1,8 @@
 .btn {
   border: none;
-  border-radius: 10%;
+  border-radius: 4px;
+  padding: 10px;
+  /* flex: 1; */
   cursor: pointer;
   font-weight: 600;
   font-family: "Inter", sans-serif;

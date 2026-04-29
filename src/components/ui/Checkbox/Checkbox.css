@@ -13,13 +13,16 @@
   position: relative;
   padding-left: 30px;
   cursor: pointer;
+  font-size: medium;
+  font-weight: 500;
 }
 
 .check-label::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 20px;
   height: 20px;
   border: 2px solid #555;
@@ -36,7 +39,8 @@
   content: "✔";
   position: absolute;
   left: 4px;
-  top: 1px;
+  top: 50%;
+  transform: translateY(-50%);
   color: white;
   font-size: 16px;
 }
