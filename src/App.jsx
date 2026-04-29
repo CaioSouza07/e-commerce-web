@@ -1,5 +1,6 @@
 import "./App.css";
 import Button from "./components/ui/Button/Button";
+import NavButton from "./components/ui/NavButton/NavButton";
 import ProductCard from "./components/ui/ProductCard/ProductCard";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           price={300}
         />
       </div>
+      <NavButton router={"/teste"}>teste</NavButton>
     </>
   );
 }
