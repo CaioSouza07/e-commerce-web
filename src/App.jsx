@@ -11,7 +11,7 @@ function App() {
       >
         <p>teste</p>
       </Button>
-      <Card onClick={() => console.log("cliquei no card")}>
+      <Card variant={"primary"} onClick={() => console.log("cliquei no card")}>
         <p> testando card</p>
       </Card>
     </>

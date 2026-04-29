@@ -1,3 +1,5 @@
+import "./Card.css";
+
 function Card({ children, variant, onClick }) {
   return (
     <div className={`card card-${variant}`} onClick={onClick}>
