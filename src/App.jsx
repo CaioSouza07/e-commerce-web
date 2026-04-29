@@ -1,5 +1,6 @@
 import "./App.css";
 import Button from "./components/ui/Button/Button";
+import Card from "./components/ui/Card/Card";
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
       >
         <p>teste</p>
       </Button>
+      <Card onClick={() => console.log("cliquei no card")}>
+        <p> testando card</p>
+      </Card>
     </>
   );
 }
