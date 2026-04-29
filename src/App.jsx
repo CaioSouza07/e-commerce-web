@@ -1,17 +1,11 @@
+import { Search } from "lucide-react";
 import "./App.css";
-import Button from "./components/ui/Button/Button";
-import NavButton from "./components/ui/NavButton/NavButton";
+import Input from "./components/ui/Input/Input";
 import ProductCard from "./components/ui/ProductCard/ProductCard";
 
 function App() {
   return (
     <>
-      <Button
-        onClick={() => console.log("TESTE: CLICADO NO BOTAO")}
-        variant={"outlined"}
-      >
-        <p>teste</p>
-      </Button>
       <div className="container">
         <ProductCard
           title={"Tênis Nike - Corrida"}
@@ -35,7 +29,9 @@ function App() {
           price={300}
         />
       </div>
-      <NavButton router={"/teste"}>teste</NavButton>
+      <Input placeholder={"Busque por um produto..."}>
+        <Search className="input-icon" size={20} />
+      </Input>
     </>
   );
 }

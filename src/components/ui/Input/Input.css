@@ -1,0 +1,27 @@
+.container-input {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #f4f4f5;
+  border: 2px solid rgb(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 50%;
+  min-width: 100px;
+  padding: 4px;
+  gap: 8px;
+}
+
+.container-input input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  font-size: large;
+}
+
+.container-input input:focus {
+  outline: 0;
+}
+
+.input-icon {
+  color: #b1b1b2;
+}
