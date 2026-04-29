@@ -1,0 +1,32 @@
+.btn {
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+.btn:hover {
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btn.btn-primary {
+  background-color: #96000a;
+  color: white;
+}
+
+.btn.btn-secondary {
+  background-color: #ffe2de;
+  color: #402b29;
+}
+
+.btn.btn-inverted {
+  background-color: #402b29;
+  color: #ffe2de;
+}
+
+.btn.btn-outlined {
+  background-color: #ffe9e6;
+  outline: solid 1px #402b29;
+  color: #402b29;
+}

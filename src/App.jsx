@@ -7,7 +7,7 @@ function App() {
     <>
       <Button
         onClick={() => console.log("TESTE: CLICADO NO BOTAO")}
-        variant={"teste"}
+        variant={"outlined"}
       >
         <p>teste</p>
       </Button>
