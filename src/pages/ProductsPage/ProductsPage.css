@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* margin-bottom: 20px; */
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* @media (max-width: 600px) {
+  body {
+    background-color: green;
+  }
+} */

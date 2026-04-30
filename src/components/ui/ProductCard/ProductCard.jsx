@@ -1,23 +1,23 @@
 import "./ProductCard.css";
 import Card from "../Card/Card";
 
-function ProductCard({ title, image, altImage, category, price, oldPrice }) {
+function ProductCard({ product }) {
   return (
     <Card variant={"primary"} onClick={() => console.log("cliquei no card")}>
       <div className="container-img">
-        <img src={image} alt={altImage} />
+        <img src={product.image} alt={product.altImage} />
       </div>
       <div className="container-infos">
-        <p className="info-category">{category}</p>
-        <h1 className="info-title">{title}</h1>
+        <p className="info-category">{product.category}</p>
+        <h1 className="info-title">{product.title}</h1>
         <h3 className="info-price">
-          {price.toLocaleString("pt-BR", {
+          {product.price.toLocaleString("pt-BR", {
             style: "currency",
             currency: "BRL",
           })}
-          {oldPrice && (
+          {product.oldPrice && (
             <p className="info-oldPrice">
-              {oldPrice.toLocaleString("pt-BR", {
+              {product.oldPrice.toLocaleString("pt-BR", {
                 style: "currency",
                 currency: "BRL",
               })}

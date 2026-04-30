@@ -1,4 +1,4 @@
-function productsReduces(state, action) {
+function productsReducer(state, action) {
   switch (action.type) {
     case "ADD":
       return {
@@ -17,4 +17,4 @@ function productsReduces(state, action) {
   }
 }
 
-export default productsReduces;
+export default productsReducer;
