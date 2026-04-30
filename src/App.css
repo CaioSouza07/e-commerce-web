@@ -10,7 +10,13 @@
 .content {
   display: flex;
   gap: 20px;
-  padding: 12px;
+  padding: 20px;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 /* @media (max-width: 600px) {
