@@ -1,6 +1,6 @@
 import "./Header.css";
-import NavButton from "../../ui/NavButton/NavButton";
-import Input from "../../ui/Input/Input";
+import NavButton from "../NavButton/NavButton";
+import Input from "../Input/Input";
 // import Button from "../ui/Button/Button";
 import { Search, ShoppingCart } from "lucide-react";
 
