@@ -1,17 +1,21 @@
 import "./App.css";
-import { Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router";
 import ProductsPage from "./pages/Products/ProductsPage";
 import SigninPage from "./pages/Signin/SigninPage";
 import SignupPage from "./pages/Signup/SignupPage";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" />
-      <Route path="/auth/login" element={<SigninPage />} />
-      <Route path="/auth/cadastro" element={<SignupPage />} />
-      <Route path="/produtos" element={<ProductsPage />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        {/* <Route path="/" element={<Home />}/> */}
+        <Route path="/auth/login" element={<SigninPage />} />
+        <Route path="/auth/cadastro" element={<SignupPage />} />
+        <Route path="/produtos" element={<ProductsPage />} />
+        {/* <Route exact path="/carrinho" element={<Private Item={CartPage} />} /> */}
+        {/* <Route path="*" element={<Home />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
