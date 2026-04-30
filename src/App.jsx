@@ -12,7 +12,15 @@ function App() {
         <Route path="/auth/login" element={<SigninPage />} />
         <Route path="/auth/cadastro" element={<SignupPage />} />
         <Route path="/produtos" element={<ProductsPage />} />
-        {/* <Route exact path="/carrinho" element={<Private Item={CartPage} />} /> */}
+        {/* <Route
+          exact
+          path="/carrinho"
+          element={
+            <RotaPrivada>
+              <CartPage />
+            </RotaPrivada>
+          }
+        /> */}
         {/* <Route path="*" element={<Home />} /> */}
       </Routes>
     </BrowserRouter>
